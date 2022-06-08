@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="shortcut icon"
+            href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1IWIjXcjRlFhdOcD_lsmUEK1fvpdnycntfA&usqp=CAU"
+        />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/9d6433328b.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="/style.css" />
+        <title>Weather.com</title>
+    </head>
+    <body>
+        <div id="container">
+            <!-- heading -->
+
+            <div id="heading">
+                <h1>Weather.com</h1>
+            </div>
+
+            <!-- input taking -->
+
+            <div id="input-data">
+                <!-- <p>Search:</p> -->
+                <div class="src-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter City Name..."
+                        autocomplete="off"
+                    />
+                </div>
+                <button id="submit" onclick="getData()">Search</button>
+            </div>
+
+            <!-- display data -->
+
+            <div id="display-weather"></div>
+        </div>
+    </body>
+</html>
+<script src="/script.js"></script>
